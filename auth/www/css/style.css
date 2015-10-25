@@ -1,0 +1,38 @@
+.login_form{
+    text-align: center;
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.input_login{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #C0C0C0;
+    background: transparent;
+}
+
+.button_login{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login_plus_info{
+    text-align: left;
+}
+.plus_info{
+    font-size: 14px;
+    margin: 0;
+}
+
+.bottom_toolbar{
+    text-align: right;
+}
+
+.create_account_icon{
+    width: 20px;
+}

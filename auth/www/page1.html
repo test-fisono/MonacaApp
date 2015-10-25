@@ -1,0 +1,27 @@
+<ons-page>
+    <ons-toolbar>
+        <div class="center">ログイン</div>
+    </ons-toolbar>
+
+    <div class="login_form">
+        <input id="l_email" type="email" class="input_login" placeholder="Email" value="" />
+        <input id="l_password" type="password" class="input_login" placeholder="Password" value="" />
+        <br />
+        <ons-button class="button_login" onclick="login()">
+            ログイン
+        </ons-button>
+        <div class="login_plus_info">
+            <br />
+            <ons-button modifier="quiet" class="plus_info">
+                <ons-icon icon="arrow-right" class="create_account_icon"></ons-icon>
+                パスワードを忘れた。         
+            </ons-button>
+            <br />
+            <ons-button modifier="quiet" class="plus_info" onclick="myNavigator.pushPage('page2.html')">
+                <ons-icon icon="arrow-right" class="create_account_icon"></ons-icon>
+                新しくアカウントを作成する。
+            </ons-button>
+        </div>
+    </div>
+
+</ons-page>
