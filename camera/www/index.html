@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.addEventListener("deviceready", onDeviceReady, false);
+        
+        function onDeviceReady(){
+            window.alert("準備完了!!");
+        }
+        
+        function takePictures(){
+            navigator.camera.getPicture(onSuccess, onFail, {quality:50, destinationType:Camera.DestinationType.DATA_URL, saveToPhotoAlbum:true});
+            
+            function onSuccess(imageData){
+                var image = document.getElementById('picture');
+                image.src = "data:image/jpeg;base64," + imageData;
+            }
+                        
+            function onFail(message){
+                alert('Error!:' + message)
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+     <h1>CAMERA</h1>   
+    </header>
+    
+    <div class="buttonArea">
+        <button type="button" onclick="takePictures()">Take a Picture</button>
+    </div>
+    
+    <div class="photoFrameLarge">
+        <img id="picture" src="" alt="" width="100%" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.splashscreen",
+        "org.apache.cordova.statusbar"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "5",
+    "title-ja": "CameraSample",
+    "title-en": "",
+    "description-ja": "",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios",
+        "winrt",
+        "chrome"
+    ],
+    "name": "generated-1444702100-548ed7477e2193880d464a15"
+}
