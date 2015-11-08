@@ -1,0 +1,38 @@
+<ons-page>
+    <ons-toolbar>
+        <div class="center">ログイン</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+        <br>
+        <ons-button class="login_loginButton">
+            <i class="fa fa-google-plus"></i> サインイン
+        </ons-button>
+        
+        <div class="login_aboutThisPage" ng-controller="AboutPageController">
+            <span>
+                <a ng-click="show('navigator.html')">
+                    <i class="fa fa-question-circle"></i> ○○○○○○について
+                </a>
+            </span>
+        </div>
+    </div>
+    
+    <ons-template id="navigator.html">
+        <ons-dialog style="height: 160px;" var="naviDialog" cancelable>
+            <ons-navigator var="myNav">
+                <div style="text-align: center">
+                    <p>
+                        ここに説明
+                    </p>
+    
+                    <p>
+                        <ons-button onclick="naviDialog.hide()">Close</ons-button>
+                        <ons-button onclick="myNav.pushPage('next.html')">Next</ons-button>
+                    </p>
+                </div>
+            </ons-navigator>
+        </ons-dialog>
+    </ons-template>
+    
+</ons-page>
