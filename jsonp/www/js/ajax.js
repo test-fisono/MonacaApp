@@ -1,6 +1,6 @@
 function addScript(){
     var script = document.createElement('script');
-    script.src = 'http://133.242.143.208:3000/ajax_json/json?callback=displayCustomer';
+    script.src = 'http://192.168.3.1:3000/ajax_json/json?callback=displayCustomer';
     script.type = "application/javascript";
     document.body.appendChild(script);
 }
