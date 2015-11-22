@@ -1,0 +1,17 @@
+<ons-page ng-controller="loginCtrl">
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Page 2</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+    
+        <form ng-submit="login()">
+            <input type="email" value="" ng-model="email" /><br/>
+            <input type="password" value="" ng-model="password"/><br />
+            <button type="submit" ng-disabled="disabled">送信</button>
+        </form>
+        <span ng-show="alert">{{alert.msg}}</span>
+
+    </div>
+</ons-page>
